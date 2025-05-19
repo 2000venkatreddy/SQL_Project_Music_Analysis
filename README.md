@@ -37,3 +37,11 @@ This project is a **guided SQL-based data analysis** of a music store database. 
 - Analyze amount spent per artist by customer
 - Determine top genres by country
 - Identify top spenders by country
+
+## 📺 Video Tutorial Reference
+
+This project was inspired and guided by content from the following YouTube channel:  
+🔗 [Rishabh Mishra Official](https://www.youtube.com/@RishabhMishraOfficial)
+
+
+
