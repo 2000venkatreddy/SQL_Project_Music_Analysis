@@ -1,10 +1,11 @@
+
+
 -- Who is the senior most employee based on job title?
 
 SELECT * 
 FROM employee
 order by levels desc
 limit 1
-
 
 -- Which countries have the most Invoices?
 
@@ -36,10 +37,6 @@ order by total desc
 -- declared the best customer. Write a query that returns the person who has spent the
 -- most money
 
-
-
-
-
 select customer.customer_id, customer.first_name,customer.last_name,SUM(invoice.total) as total
 from customer
 JOIN invoice ON customer.customer_id = invoice.customer_id
@@ -64,14 +61,8 @@ where track_id IN(
 )
 order by email ASC
 
-
-
-
-
 -- Let's invite the artists who have written the most rock music in our dataset. Write a
 -- query that returns the Artist name and total track count of the top 10 rock bands
-
-
 
 select artist.artist_id,artist.name,count(artist.artist_id) as num_of_songs
 from track
@@ -121,21 +112,5 @@ join album alb ON alb.album_id = t.album_id
 join best_selling_artist bsa on bsa.artist_id = alb.artist_id
 group by 1,2,3,4
 order by 5 DESc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
